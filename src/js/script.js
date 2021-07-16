@@ -43,7 +43,7 @@ function fetchCards() {
   return imageApiService.fetchImage().then(cards => {
     renderMarkup(cards);
 
-    scrollPage();
+    
     loadMoreBtn.enable();
 
     if (cards.length === 0) {
